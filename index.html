@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conferencia Buenos Aires es un proyecto final del programa Codo a Codo 4.0, para PHP Fullstack. En este caso pertenece a los trabajos finales de la comisión 23586">
+    <meta name="keywords" content="proyecto final,Codo a Codo 4.0,estudios">
+    <meta name="author" content="Ale Noriega">  
+    <title>Conferencia Buenos Aires</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="./assets/img/codoacodo.png" alt="logo codo a codo 4.0" height="75px" /></a>
+            <h2>Conferencia Bs. As.</h2>
+        </div>
+        <nav class="menu-principal">
+            <ul class="menu">
+                <li><a href="#seccion1">La conferencia</a></li>
+                <li><a href="#seccion2">Los oradores</a></li>
+                <li><a href="#seccion3">El lugar y la fecha</a></li>
+                <li><a href="#seccion4">Conviértete en orador</a></li>
+                <li><a href="./pages/tickets.html">Comprar tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conferencia" id="seccion1">
+            <div class="descripcion">
+                <h1>Conferencia Bs. As.</h1>
+                <p>Bs. As. llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                    conocimiento y
+                    experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
+                    evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te
+                    esperamos!</p>
+                <div class="botones">
+                    <a href="">Quiero ser Orador</a>
+                    <a href="">Comprar Tickets</a>
+                </div>
+            </div>
+        </section>
+        <section class="oradores" id="seccion2">
+            <h2>
+                <div class="texto-superior-titulo">Conoce a los</div> Oradores
+            </h2>
+            <div class="caja-oradores">
+                <div class="caja" id="steve"><img src="./assets/img/steve.jpg" alt="Steve Jobs" width="350px" height="350px" />
+                    <div class="caja-interno">
+                        <h4 class="recuadro js">javascript</h4>
+                        <h4 class="recuadro react">react</h4>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officiis error recusandae cum
+                            alias
+                            omnis a, earum officia sunt ut magnam nemo. Nulla aliquam tempora blanditiis iure, fugiat
+                            consequuntur aperiam?</p>
+                    </div>
+                </div>
+                <div class="caja" id="bill"><img src="./assets/img/bill.jpg" alt="Bill Gates" width="350px" height="350px" />
+                    <div class="caja-interno">
+                        <h4 class="recuadro js">javascript</h4>
+                        <h4 class="recuadro react">react</h4>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officiis error recusandae cum
+                            alias
+                            omnis a, earum officia sunt ut magnam nemo. Nulla aliquam tempora blanditiis iure, fugiat
+                            consequuntur aperiam?</p>
+                    </div>
+                </div>
+                <div class="caja" id="ada"><img src="./assets/img/ada.jpeg" alt="Ada Lovelace" width="350px" height="350px" />
+                    <div class="caja-interno">
+                        <h4 class="recuadro negocios">negocios</h4>
+                        <h4 class="recuadro startup">startups</h4>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officiis error recusandae cum
+                            alias
+                            omnis a, earum officia sunt ut magnam nemo. Nulla aliquam tempora blanditiis iure, fugiat
+                            consequuntur aperiam?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navegador-oradores">
+                <a href="#steve">1</a>
+                <a href="#bill">2</a>
+                <a href="#ada">3</a>
+            </div>
+        </section>
+        <section class="lugarfecha" id="seccion3">
+            <div class="columna imagen-fondo"></div>
+            <div class="columna">
+                <h2>Bs. As. - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                    Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                    Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de
+                    Honolulu ha formado una ciudad-condado consolidada que cobre toda la ciudad (aproximadamente 600 km2
+                    de
+                    superficie).</p>
+                <a>Conocé más</a>
+            </div>
+        </section>
+        <section class="formulario" id="seccion4">
+            <h2>
+                <div class="texto-superior-titulo">Conviértete en un</div> Orador
+            </h2>
+            <p class="orador">Anótate como orador para dar una <span class="punteado">charla ignite</span>. Cuéntanos de que quieres hablar.</p>
+            <form>
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" />
+                    <input type="text" placeholder="Apellido" />
+                </div>
+                <div class="contenedor-inputs">
+                <textarea placeholder="¿Sobre qué quieres hablar?"></textarea>
+                </div>
+                <p class="aviso">Recuerda incluir un título para tu charla</p>
+                <button>Enviar</button>         
+            </form>
+        </section>
+    </main>
+
+    <aside class="publicidad">
+        <h2>Publicidad</h2>
+        <div class="videos-publicitarios">
+        <iframe width="300" src="https://www.youtube.com/embed/ptXiQwE535s?controls=0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="300" src="https://www.youtube.com/embed/W-z0iTXEarw?controls=0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="300" src="https://www.youtube.com/embed/KAY1j-MPpyA" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+    </aside>
+
+    <footer>
+        <nav class="menu-secundario">
+            <ul class="menu">
+                <li class="submenu"><a href="">Preguntas frecuentes</a></li>
+                <li class="submenu"><a href="">Contáctanos</a></li>
+                <li class="submenu"><a href="">Prensa</a></li>
+                <li class="submenu"><a href="">Conferencias</a></li>
+                <li class="submenu"><a href="">Terminos y condiciones</a></li>
+                <li class="submenu"><a href="">Privacidad</a></li>
+                <li class="submenu"><a href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

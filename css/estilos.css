@@ -1,0 +1,480 @@
+
+
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5em;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353a40;
+  color: #ffffff;
+  padding: 25px 100px 10px 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menu-principal {
+  display: flex;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.menu li {
+  padding: 0 0 0 20px;
+}
+.menu li > a {
+  color: #bababa;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #ffffff;
+}
+.menu li:last-child > a {
+  color: #29a744;
+}
+
+/* Main */
+.conferencia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/img/ba1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 10px;
+  color: #ffffff;
+}
+.descripcion {
+  width: 30%;
+  margin-right: 100px;
+  text-align: right;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.botones a {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition-duration: 0.5s;
+}
+.botones a:first-child {
+  color: #ffffff;
+  margin: 5px 5px;
+  border: 1px solid #ffffff;
+}
+.botones a:first-child:hover {
+  background-color: #ffffff;
+  color: #6c757c;
+  transform: scale(1.1, 1.1);
+}
+.botones a:last-child {
+  color: #ffffff;
+  background-color: #96c93e;
+  border: 1px solid #96c93e;
+}
+.botones a:last-child:hover {
+  color: #ffffff;
+  transform: scale(1.1, 1.1);
+}
+.oradores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+.texto-superior-titulo {
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.caja-oradores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.caja {
+  width: 25%;
+  margin: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+.caja img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.caja-interno {
+  padding: 25px;
+}
+.caja-interno p {
+  margin-top: 20px;
+}
+.navegador-oradores {
+  visibility: hidden;
+}
+.recuadro {
+  display: inline-block;
+  padding: 1px 5px 3px 5px;
+  margin: 5px 5px 5px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.js {
+  color: #000000;
+  background-color: #fec107;
+}
+.react {
+  color: #ffffff;
+  background-color: #17a2b9;
+}
+.negocios {
+  color: #ffffff;
+  background-color: #6c757c;
+}
+.startup {
+  color: #ffffff;
+  background-color: #dc3546;
+}
+
+.lugarfecha {
+  display: flex;
+}
+.columna {
+  width: 50%;
+  max-width: 50%;
+  padding: 1%;
+  background-color: #353a40;
+  color: #ffffff;
+}
+.imagen-fondo {
+  background-image: url(../assets/img/ba3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.columna h2 {
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.columna a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 15px 0;
+  border: 1px solid #ffffff;
+  padding: 2px 10px 5px 10px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.columna a:hover {
+  background-color: #ffffff;
+  color: #6c757c;
+  transform: scale(1.1, 1.1);
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+.orador {
+  margin-bottom: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+form button {
+  background-color: #96c93e;
+  padding: 10px 25px;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 15px 5px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #96c93e;
+  color: #ffffff;
+  transform: scale(1.1, 1.1);
+}
+.contenedor-inputs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+form input[type='text'] {
+  padding: 10px;
+  margin: 5px 5px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 50%;
+  color: #6b757e;
+}
+form textarea {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  color: #6b757e;
+}
+.punteado {
+  text-decoration: underline dotted;
+}
+.aviso {
+  font-size: 0.85rem;
+  padding: 0 5px 15px 5px;
+  color: #6b757e;
+}
+.publicidad {
+  margin: 2.5%;
+  text-align: center;
+}
+.publicidad h2 {
+  margin-bottom: 25px;
+}
+.videos-publicitarios {
+  display: flex;
+  justify-content: center;
+}
+.videos-publicitarios iframe {
+  margin: 0 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e516e;
+  padding: 25px;
+}
+.menu-secundario {
+  display: block;
+  color: #ffffff;
+  font-size: 0.85em;
+}
+
+/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 425px) {
+  /* Header y menu de navegación principal */
+  header {
+    display: block;
+    padding: 5px 10px 15px 5px;
+  }
+  .logo h2 {
+    font-size: 1.25rem;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0 10px 0 5px;
+  }
+  .menu li {
+    padding: 5px 0;
+  }
+  .menu li a {
+    padding: 0 5px;
+  }
+
+  /* Sección 01: Conferencia Bs. As. */
+  .conferencia {
+    padding: 50px 10px;
+  }
+
+  .descripcion {
+    width: 90%;
+    margin-right: 20px;
+    text-align: right;
+  }
+  .botones a {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+  .botones a:first-child {
+    margin: 10px 10px;
+  }
+
+  /* Sección 02: Oradores */
+  .caja-oradores {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+  }
+  .caja {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+  }
+  .caja img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .caja-interno {
+    padding: 15px 10px;
+  }
+  .navegador-oradores {
+    visibility: visible;
+  }
+
+  /* Sección 3: Fecha y Hora  */
+  .lugarfecha {
+    display: block;
+  }
+  .columna {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: 25px;
+  }
+  .imagen-fondo {
+    height: 300px;
+  }
+  /* Sección 4: Formulario */
+  form {
+    width: 100%;
+  }
+
+  /* Publicidad */
+  .videos-publicitarios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .videos-publicitarios iframe {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+
+  /* Header y menu de navegación principal */
+  header {
+    display: block;
+    padding: 5px 10px 15px 5px;
+  }
+  .menu-principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0 5px 0 5px;
+  }
+  .menu li {
+    padding: 0 5px;
+  }
+
+  /* Sección 01: Conferencia Bs. As. */
+  .descripcion {
+    width: 60%;
+    margin-right: 20px;
+    text-align: right;
+  }
+  .botones a {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+  .botones a:first-child {
+    margin: 10px 10px;
+  }
+
+  /* Seccion 02: Oradores */
+  .oradores {
+    margin: 25px 0;
+  }
+  .caja-oradores {
+    text-wrap: none;
+  }
+  .caja {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+  }
+  .caja img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .caja-interno {
+    padding: 15px 15px 20px 15px;
+  }
+
+  /* Sección 3: Fecha y Hora  */
+  .columna {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  /* Sección 4: Formulario */
+  form {
+    width: 70%;
+  }
+
+  /* Publicidad */
+  .videos-publicitarios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .videos-publicitarios iframe {
+    margin: 5px 15px;
+    width: 210px;
+  }
+
+  /* Footer */
+  footer {
+
+    padding: 25px 0;
+  }
+
+
+
+}
