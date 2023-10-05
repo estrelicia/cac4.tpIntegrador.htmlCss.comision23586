@@ -1,5 +1,3 @@
-
-
 /* Generales */
 * {
   margin: 0;
@@ -70,6 +68,7 @@ header {
   background-repeat: no-repeat;
   padding: 50px 10px;
   color: #ffffff;
+  height: clamp(300px, 50vh, 500px);
 }
 .descripcion {
   width: 30%;
@@ -110,7 +109,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25px;
+  margin: 25px 10px;
 }
 .texto-superior-titulo {
   font-size: 0.85rem;
@@ -119,18 +118,17 @@ header {
 }
 .caja-oradores {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center; 
 }
 .caja {
-  width: 25%;
+  width:25%;
   margin: 15px;
   border: 1px solid #e1e1e1;
   border-radius: 5px;
 }
 .caja img {
-  max-width: 100%;
+  width:min(300px, 50vw);
   object-fit: cover;
 }
 .caja-interno {
@@ -166,7 +164,6 @@ header {
   color: #ffffff;
   background-color: #dc3546;
 }
-
 .lugarfecha {
   display: flex;
 }
@@ -300,7 +297,8 @@ footer {
     padding: 5px 10px 15px 5px;
   }
   .logo h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin-right: 10px;
   }
   .menu {
     display: flex;
@@ -337,17 +335,15 @@ footer {
 
   /* Sección 02: Oradores */
   .caja-oradores {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
+    display: flex;
+    flex-wrap: wrap;
   }
   .caja {
     width: 100%;
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
+    margin:10px 10px;
   }
   .caja img {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
   }
   .caja-interno {
@@ -427,9 +423,6 @@ footer {
   /* Seccion 02: Oradores */
   .oradores {
     margin: 25px 0;
-  }
-  .caja-oradores {
-    text-wrap: none;
   }
   .caja {
     width: 100%;
