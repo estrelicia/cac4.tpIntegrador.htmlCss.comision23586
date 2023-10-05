@@ -54,7 +54,16 @@ header {
 .menu li:last-child > a {
   color: #29a744;
 }
-
+.menu-movil {
+  display:none;
+}
+i {
+  font-size:2rem;
+  color:#FFFFFF;
+  text-align: center;
+  padding: 0 25px 0 0;
+  margin:0;
+}
 /* Main */
 .conferencia {
   display: flex;
@@ -117,28 +126,25 @@ header {
   text-transform: uppercase;
 }
 .caja-oradores {
+  width: 70%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center; 
 }
 .caja {
-  width:25%;
+  width: 25%;
   margin: 15px;
   border: 1px solid #e1e1e1;
   border-radius: 5px;
 }
 .caja img {
-  width:min(300px, 50vw);
-  object-fit: cover;
+  max-width: 100%;
 }
 .caja-interno {
   padding: 25px;
 }
 .caja-interno p {
   margin-top: 20px;
-}
-.navegador-oradores {
-  visibility: hidden;
 }
 .recuadro {
   display: inline-block;
@@ -314,8 +320,15 @@ footer {
   .menu li a {
     padding: 0 5px;
   }
+  .menu-movil {
+    display:flex;
+    justify-content: flex-end;
+  }
 
   /* Sección 01: Conferencia Bs. As. */
+  .menu-principal {
+    display: none;
+  }
   .conferencia {
     padding: 50px 10px;
   }
@@ -335,6 +348,7 @@ footer {
 
   /* Sección 02: Oradores */
   .caja-oradores {
+    width:98%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -423,6 +437,9 @@ footer {
   /* Seccion 02: Oradores */
   .oradores {
     margin: 25px 0;
+  }
+  .caja-oradores {
+    width:100%;
   }
   .caja {
     width: 100%;
